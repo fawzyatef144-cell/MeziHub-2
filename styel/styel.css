@@ -2559,12 +2559,12 @@ footer .socail div i{
     body{
         overflow-x: hidden;
     }
-}
-
-@media (max-width: 768px) {
     .sec-three .right {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
     .sec-three .right {
         grid-template-columns: 1fr; 
     }
