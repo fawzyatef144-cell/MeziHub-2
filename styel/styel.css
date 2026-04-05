@@ -34,8 +34,6 @@
 
 body{
     font-family: var(--bodyFont-one);
-    overflow-x: hidden;
-    
 }
 
 
@@ -792,6 +790,10 @@ section{
         grid-template-columns: 1fr;
         gap: 300px;
     }
+.footer{
+    display: none;
+}
+    
     .sec-tow .right > div{
         flex-direction: column;
         justify-content: flex-start;
@@ -2473,7 +2475,7 @@ footer .socail div i{
     }
 }
 
-/* 4. الموبايل (Small Screens) */
+/*  (Small Screens) */
 @media (max-width: 768px) {
     .secOne .left h1 { font-size: 35px; }
     .bar {
@@ -2489,7 +2491,7 @@ footer .socail div i{
     }
     .sec-patient > b { font-size: 26px; }
     .menu {
-        width: 85% !important; /* المنيو تاخد مساحة أكبر في الموبايل */
+        width: 85% !important; 
     }
     .form-row {
         flex-direction: column;
@@ -2502,9 +2504,90 @@ footer .socail div i{
 /* 5. الموبايل الصغير جداً */
 @media (max-width: 480px) {
     .btn {
-        width: 100%; /* الزراير تاخد العرض كامل */
+        width: 100%; 
     }
     .sec-tow .right .tit-sic {
         font-size: 28px;
+    }
+}
+/* --- Fix Section Three Responsive --- */
+
+@media (max-width: 1200px) {
+    .sec-three > b {
+        margin: 20px 50px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .sec-three > div {
+        margin-bottom: 100px; /* تقليل الفراغ السفلي الضخم */
+    }
+}
+
+@media (max-width: 992px) {
+    .sec-three span {
+        margin-top: 50px; 
+    }
+    .sec-three > b {
+        font-size: 30px;
+        margin: 20px;
+    }
+    .sec-three > div {
+        grid-template-columns: 1fr; 
+        margin-bottom: 50px;
+        gap: 40px;
+    }
+    .sec-three > div .left {
+        align-items: center; 
+        width: max-content; 
+        margin: 10px auto;
+    }
+    .sec-three > div .left div {
+        width: 100%; 
+        justify-content: center;
+    }
+    .sec-three .right {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .sec-three .right > div {
+        padding: 20px;
+    }
+    .sec-three .right > div i{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-three .right {
+        grid-template-columns: 1fr; 
+    }
+    .sec-three .right > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .sec-three .footer {
+        position: relative; /* إلغاء التثبيت المطلق عشان ميتداخلش مع العناصر */
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec-three > b {
+        font-size: 24px;
+    }
+    .sec-three > div .left div p {
+        font-size: 18px;   
+    }
+    .sec-three > div .left div i {
+        width: 45px;
+        height: 45px;
     }
 }
