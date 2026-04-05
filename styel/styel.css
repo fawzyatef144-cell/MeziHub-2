@@ -2563,6 +2563,9 @@ footer .socail div i{
 
 @media (max-width: 768px) {
     .sec-three .right {
+        display: none;
+    }
+    .sec-three .right {
         grid-template-columns: 1fr; 
     }
     .sec-three .right > div {
