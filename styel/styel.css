@@ -2562,6 +2562,9 @@ footer .socail div i{
     .sec-three .right {
         display: none;
     }
+    .doc{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
